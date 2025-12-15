@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ByeBuy — Return Plan Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>ByeBuy — A you-less return site</h1>
+    <p>Upload a return. Our Generative AI produces the return plan: policy assumptions, deadline risk, steps, and pickup suggestion.</p>
+    <a class="cta" href="#demo">Generate a Return Plan</a>
+  </header>
+
+  <section>
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><b>Enter details</b> (retailer, item, purchase date, reason).</li>
+      <li><b>AI generates</b> policy assumptions + deadline risk + steps.</li>
+      <li><b>Pickup suggestion</b> + tracking milestones included.</li>
+    </ol>
+  </section>
+
+  <section id="demo">
+    <h2>Return Plan Generator (Demo)</h2>
+    <div class="card">
+      <div class="grid">
+        <label>Retailer <input id="retailer" /></label>
+        <label>Item <input id="item" /></label>
+        <label>Purchase date <input id="purchaseDate" type="date" /></label>
+        <label>Return reason
+          <select id="reason">
+            <option>Too small / didn’t fit</option>
+            <option>Not as described</option>
+            <option>Damaged / defective</option>
+            <option>Changed mind</option>
+          </select>
+        </label>
+      </div>
+
+      <label>Extra notes <input id="notes" /></label>
+
+      <button id="btnPlan">Generate Return Plan (AI)</button>
+      <pre id="planOut">Your AI return plan will appear here…</pre>
+    </div>
+  </section>
+
+  <footer>
+    <p>ByeBuy • Pricing starts at $10/month • Powered by Generative AI</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
