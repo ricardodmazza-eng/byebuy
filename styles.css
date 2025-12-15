@@ -1,0 +1,11 @@
+body{font-family:system-ui,Arial;margin:0;line-height:1.45}
+.hero{padding:56px 20px;max-width:980px;margin:0 auto}
+section{padding:28px 20px;max-width:980px;margin:0 auto}
+.cta{display:inline-block;padding:10px 14px;border:1px solid #000;text-decoration:none;border-radius:12px}
+.steps{padding-left:18px}
+.card{border:1px solid #ddd;border-radius:16px;padding:16px}
+.grid{display:grid;gap:12px}
+label{display:grid;gap:6px}
+input,select{padding:10px;border-radius:12px;border:1px solid #ddd}
+button{padding:10px 12px;border-radius:12px;border:1px solid #000;background:#fff;cursor:pointer;margin-top:10px}
+pre{white-space:pre-wrap;background:#f7f7f7;border-radius:12px;padding:12px;min-height:160px}
